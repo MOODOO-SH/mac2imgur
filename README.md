@@ -53,9 +53,9 @@ Enabling it is as simple as going to the options dialog (accessible by clicking 
 ---
 
 ### Building your own .app###
-If you would like compiling your own version of mac2imgur, you may read the wiki page I wrote, in order to make things easier to you: https://github.com/dexafree/mac2imgur/wiki/Building-the-.app
+If you would like compiling your own version of mac2imgur, you may read the wiki page [dexafree](https://github.com/dexafree) wrote, in order to make things easier to you: https://github.com/dexafree/mac2imgur/wiki/Building-the-.app
 
-Also, I uploaded all the .jar files, in order to avoid any maven-dependency problem.
+Also, [dexafree](https://github.com/dexafree) uploaded all the .jar files, in order to avoid any maven-dependency problem.
 
 ---
 
@@ -69,7 +69,7 @@ On the same note, pull requests to fix issues add features or simply to improve 
 
 ###Contributors###
 
-See [CONTRIBUTING.md](https://github.com/rauix/mac2imgur/blob/master/CONTRIBUTORS.md)
+See [CONTRIBUTORS.md](https://github.com/rauix/mac2imgur/blob/master/CONTRIBUTORS.md)
 
 ---
 
