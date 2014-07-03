@@ -9,10 +9,10 @@ import java.io.IOException;
 
 public class Tray {
 
-    private TrayIcon trayIcon;
     CheckboxMenuItem pauseChk;
     java.awt.Image activeImg;
     java.awt.Image inactiveImg;
+    private TrayIcon trayIcon;
 
     public Tray() throws IOException, AWTException {
 
@@ -43,7 +43,7 @@ public class Tray {
         MenuItem website = new MenuItem("Website");
         website.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                Utils.openBrowser("https://github.com/rauix/mac2imgur");
+                Utils.openBrowser(Main.SUPPORT_URL);
             }
         });
 

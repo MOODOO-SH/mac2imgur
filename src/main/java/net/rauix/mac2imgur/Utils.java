@@ -76,16 +76,16 @@ public final class Utils {
         }
     }
 
-    public static void setLastToken(String token){
+    public static String getLastToken() {
+        return lastToken;
+    }
+
+    public static void setLastToken(String token) {
         lastTokenTime = DateTime.now().plusSeconds(3600);
         lastToken = token;
     }
 
-    public static String getLastToken(){
-        return lastToken;
-    }
-
-    public static boolean isTokenStillValid(){
+    public static boolean isTokenStillValid() {
 
         return (DateTime.now().isBefore(lastTokenTime));
 

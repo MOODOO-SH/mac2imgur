@@ -22,26 +22,27 @@ public class AccountUpload implements ImgurUpload {
         String accessToken;
         boolean tokenValid = Utils.isTokenStillValid();
 
-        if(!tokenValid || Utils.getLastToken() == null) {
+        if (!tokenValid || Utils.getLastToken() == null) {
             Authorize auth = new Authorize();
             auth.makeNewAccessTokenRequest();
-            if(auth.wasSuccessful())
+
+            if (auth.wasSuccessful())
                 accessToken = auth.getAccessToken();
             else
                 accessToken = Utils.getLastToken();
 
 
-        } else
+        } else {
             accessToken = Utils.getLastToken();
-
+        }
 
 
         response = Unirest.post("https://api.imgur.com/3/upload")
-                .header("Authorization", "Client-Bearer "+accessToken)
+                .header("Authorization", "Client-Bearer " + accessToken)
                 .field("image", img.getEncodedImage())
                 .field("type", "base64")
                 .field("title", img.getName())
-                .field("description", "Uploaded by mac2imgur! (https://github.com/dexafree/mac2imgur)")
+                .field("description", "Uploaded by mac2imgur! (" + Main.SUPPORT_URL + ")")
                 .asJson();
 
     }

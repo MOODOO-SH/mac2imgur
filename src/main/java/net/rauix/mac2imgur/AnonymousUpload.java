@@ -19,11 +19,11 @@ public class AnonymousUpload implements ImgurUpload {
 
     public void start() throws UnirestException, IOException {
         response = Unirest.post("https://api.imgur.com/3/upload")
-                .header("Authorization", "Client-ID 5867856c9027819")
+                .header("Authorization", "Client-ID " + Main.CLIENT_ID)
                 .field("image", img.getEncodedImage())
                 .field("type", "base64")
                 .field("title", img.getName())
-                .field("description", "Uploaded by mac2imgur! (https://github.com/rauix/mac2imgur)")
+                .field("description", "Uploaded by mac2imgur! (" + Main.SUPPORT_URL + ")")
                 .asJson();
     }
 

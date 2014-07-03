@@ -6,6 +6,22 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+enum Level {
+
+    DEBUG(1), INFO(2), WARNING(3), SEVERE(4);
+
+    private int value;
+
+    Level(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+}
+
 public class Logger {
 
     private File logFile;
@@ -118,20 +134,4 @@ public class Logger {
             }
         }
     }
-}
-
-enum Level {
-
-    DEBUG(1), INFO(2), WARNING(3), SEVERE(4);
-
-    private int value;
-
-    Level(int value) {
-        this.value = value;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
 }

@@ -13,6 +13,9 @@ import java.io.IOException;
 public class Main {
 
     public static final double VERSION = 2.3;
+    public static final String CLIENT_ID = "5867856c9027819";
+    public static final String CLIENT_SECRET = "bae438a13b1697cddc8ce912316ad5e1f1facd33";
+    public static final String SUPPORT_URL = "https://github.com/rauix/mac2imgur";
 
     static final String DIR = Utils.getPrefs().get("MONITOR-DIR", System.getProperty("user.home") + "/Desktop/");
 
@@ -108,11 +111,11 @@ public class Main {
                                 ImgurUpload upload;
 
                                 // Check if the user wants to use the anonymous or the account upload
-                                if(Utils.getPrefs().getBoolean("ANONYMOUS", true))
+                                if (Utils.getPrefs().getBoolean("ANONYMOUS", true)) {
                                     upload = new AnonymousUpload(img);
-
-                                else
+                                } else {
                                     upload = new AccountUpload(img);
+                                }
 
 
                                 // Change icon to indicate activity has started and begin the upload

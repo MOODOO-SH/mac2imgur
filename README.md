@@ -1,4 +1,4 @@
-#mac2imgur [![Build Status](http://ci.rauix.net/buildStatus/icon?job=mac2imgur)](http://ci.rauix.net/job/mac2imgur/)#
+#mac2imgur#
 
 
 ###Installation Instructions###
@@ -10,6 +10,7 @@
 After opening it, you'll notice a small (hopefully unobtrusive) system tray icon:
 
 ![alt text](http://i.imgur.com/7bnd5pz.png "mac2imgur system tray icon")
+
 ---
 
 ###Usage###
@@ -25,6 +26,7 @@ After you've taken a screenshot, you'll receive a notification via the Mac OS X 
 If the upload was successful, then your screenshot has been uploaded and the link has been copied to your clipboard.
 
 ![alt text](http://i.imgur.com/D7PAsRP.png "mac2imgur upload notification")
+
 ---
 
 ###Options###
@@ -38,14 +40,16 @@ There are a few options that you can change, via the options dialog (accessible 
 * Select which formats should mac2imgur upload
 * Choose between Anonymous or Account uploads
 
-![alt text](http://i.imgur.com/xfjCQYL.png "mac2imgur options menu")
+![alt text](http://i.imgur.com/Yc2ATPR.png "mac2imgur options menu")
+
 ---
 
 ###Account support###
-Since v2.4, mac2imgur gives support for account-uploading, giving you the option for managing and deleting the images you no longer want online.
+Since v2.4, mac2imgur gives support for account-uploading (courtesy of [dexafree](https://github.com/dexafree)), giving you the option for managing and deleting the images you no longer want online.
 
 Enabling it is as simple as going to the options dialog (accessible by clicking the system tray icon, then selecting 'Preferences' from the popup menu), Accounts option and at the Account section, just follow the instructions.
-![Account support](http://i.imgur.com/G3jHSnI.png "Account support")
+![Account support](http://i.imgur.com/48X6rfy.png "Account support")
+
 ---
 
 ### Building your own .app###
@@ -54,8 +58,21 @@ If you would like compiling your own version of mac2imgur, you may read the wiki
 Also, I uploaded all the .jar files, in order to avoid any maven-dependency problem.
 
 ---
+
 ###Issues & Pull Requests###
 
 If something isn't working as expected, feel free to [submit an issue](https://github.com/rauix/mac2imgur/issues).
 
 On the same note, pull requests to fix issues add features or simply to improve the codebase are greatly appreciated - [fork](https://github.com/rauix/mac2imgur/fork) away! ;D
+
+---
+
+###Contributors###
+
+See [CONTRIBUTING.md](https://github.com/rauix/mac2imgur/blob/master/CONTRIBUTORS.md)
+
+---
+
+###License###
+
+See [LICENSE](https://github.com/rauix/mac2imgur/blob/master/LICENSE)
